@@ -1,0 +1,76 @@
+{
+    "invoice_number": 1022197,
+    "due_date": "2024-06-12",
+    "company": "*Varsteel Ltd. - TRUCKING",
+    "address1": "3810 Allard Avenue",
+    "purchaseorder_number": "",
+    "city": "Leduc",
+    "state": "Alberta",
+    "postalcode": "T9E 0R8",
+    "subtotal": 40.89,
+    "discount": 2.02,
+    "gst": 8.05,
+    "orders": [
+        {
+            "tracking_number": "1776525",
+            "submitted_on_date": "2024-06-13T15:57:28.340Z",
+            "from_name": ".shipper ",
+            "from_companyname": "(A) Edvan ",
+            "from_address1": "1407  8 Street",
+            "from_city": "Nisku",
+            "from_state": "AB",
+            "from_postalcode": "T9E 7M5",
+            "to_companyname": "(A) Thermo Design Engineering - Receiving ",
+            "to_contactname": ".",
+            "to_address1": "1630 70 Avenue Northwest",
+            "to_city": "Edmonton",
+            "to_state": "AB",
+            "to_postcode": "T6P 1P5",
+            "description": "length angle 20ft ",
+            "requestedby": "bill@varsteel",
+            "quantity": 1,
+            "weight": 170,
+            "dimensions_depth": 0,
+            "dimensions_width": 0,
+            "dimensions_height": 0,
+            "po_number": "LD1106132",
+            "referencenumber": "LD1106132",
+            "time_of_delivery": "2024-06-13T17:49:17.000Z",
+            "driver_firstname": "407 Daniel ",
+            "driver_lastname": "Pritchard (4)",
+            "comments": "",
+            "service_level": "7.  LTL Service",
+            "truck_type": "5. 5 Ton",
+            "baseprice": 0,
+            "options": [
+                {
+                    "calculatedcost": 20,
+                    "name": "Varsteel Length 10'-24'",
+                    "archived": false
+                },
+                {
+                    "calculatedcost": 0,
+                    "name": "FSC 3,000 - 49,999 LBS",
+                    "archived": false
+                },
+                {
+                    "calculatedcost": 0,
+                    "name": "Pipe and Supply Zones",
+                    "archived": false
+                },
+                {
+                    "calculatedcost": 13,
+                    "name": "Pipe and Supply",
+                    "archived": false
+                },
+                {
+                    "calculatedcost": 7.89,
+                    "name": "FSC 0 - 2,999 LBS",
+                    "archived": false
+                }
+            ],
+            "totalcost": 40.89,
+            "received_by": ".Abraham "
+        }
+    ]
+}
