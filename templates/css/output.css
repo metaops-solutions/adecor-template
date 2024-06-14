@@ -618,6 +618,10 @@ video {
   flex-basis: 25%;
 }
 
+.basis-1\/6 {
+  flex-basis: 16.666667%;
+}
+
 .columns-2 {
   -moz-columns: 2;
        columns: 2;
