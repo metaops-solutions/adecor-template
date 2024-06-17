@@ -79,55 +79,112 @@
         </div>
         <div class="basis-5/6">
             <h2 class="text-blue-300">Get Rewarded with the AIR MILES® Reward Program*</h2>
-            <p>Click this link for further details - <a href="https://www.actionexpressedm.ca/home/">https://www.actionexpressedm.ca/home/</a></p>
-            <p>Conditions apply, speak to a representative for details. Get Miles on invoices paid net 30 days. Cannot be combined with any other offers. Please allow up to 4 weeks from the time of payment for Miles to be posted to your Collector Account.</p>
+            <p>Click this link for further details - <a href="https://www.actionexpressedm.ca/home/">https://www.actionexpressedm.ca/home/</a>
+            </p>
+            <p>Conditions apply, speak to a representative for details. Get Miles on invoices paid net 30 days. Cannot
+                be combined with any other offers. Please allow up to 4 weeks from the time of payment for Miles to be
+                posted to your Collector Account.</p>
         </div>
     </div>
     {{#orders}}
     <div class="flex flex-row">
         <div class="basis-1/2">
-            <div class="p-3 bg-slate-500">
+            <div class="p-1 bg-slate-500">
                 <p><span class="font-bold">Tracking Number: </span>{{ tracking_number }} </p>
             </div>
-            <div class="font-bold">From: </div>
+            <div class="font-bold">From:</div>
             <div>{{ from_companyname }}</div>
             <div>{{ from_address1 }}</div>
             <div>{{ from_city }} {{ from_state }}</div>
             <div>{{ from_postalcode }}</div>
-            <hr class="solid">
+            <hr class="solid p-2">
             <div class="flex flex-row">
-                <div class="basis-1/2">
-                    <div class="font-bold">Description: </div>
-                    <div class="font-bold">Requested By: </div>
-                    <div class="font-bold">Quantity: </div>
-                    <div class="font-bold">Weight: </div>
-                    <div class="font-bold">Dimensions: </div>
-                    <div class="font-bold">PO Number: </div>
-                    <div class="font-bold">Reference Number: </div>
-                    <div class="font-bold">Time of Delivery: </div>
-                    <div class="font-bold">Unit Number: </div>
-                    <div class="font-bold">Comments: </div>
-                </div>
-                <div class="basis-1/2">
-                    <div>{{ description }}</div>
-                    <div>{{ requested_by }}</div>
-                    <div>{{ quantity }}</div>
-                    <div>{{ weight }}</div>
-                    <div>{{ dimensions }}</div>
-                    <div>{{ po_number }}</div>
-                    <div>{{ reference_number }}</div>
-                    <div>{{ time_of_delivery }}</div>
-                    <div>{{ unit_number }}</div>
-                    <div>{{ comments }}
+                <div class="basis-1/2 font-bold">Description:</div>
+                <div class="basis-1/2">{{ description }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Requested By:</div>
+                <div class="basis-1/2">{{ requested_by }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Quantity:</div>
+                <div class="basis-1/2">{{ quantity }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Weight:</div>
+                <div class="basis-1/2">{{ weight }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Dimensions:</div>
+                <div class="basis-1/2">{{ dimensions_depth }}L x {{ dimensions_width }}W x {{ dimensions_height }}H
                 </div>
             </div>
-
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">PO Number:</div>
+                <div class="basis-1/2">{{ po_number }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Reference Number:</div>
+                <div class="basis-1/2">{{ reference_number }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Time of Delivery:</div>
+                <div class="basis-1/2">{{ time_of_delivery }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Unit Number:</div>
+                <div class="basis-1/2">{{ unit_number }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Comments:</div>
+                <div class="basis-1/2">{{ comments }} </div>
+            </div>
         </div>
         <div class="basis-1/2">
-
+            <div class="p-1 bg-slate-500">
+                <p><span class="font-bold">Submitted On: </span>{{ submitted_on_date }} </p>
+            </div>
+            <div class="font-bold">To:</div>
+            <div>{{ to_companyname }}</div>
+            <div>{{ to_address1 }}</div>
+            <div>{{ to_city }} {{ to_state }}</div>
+            <div>{{ to_postcode }}</div>
+            <hr class="solid py-2">
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Service Level:</div>
+                <div class="basis-1/2 font-bold">{{ service_level }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Truck Type:</div>
+                <div class="basis-1/2">{{ truck_type }} </div>
+            </div>
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Base Price:</div>
+                <div class="basis-1/2">${{ baseprice }} </div>
+            </div>
+            <br>
+            <div class="font-bold py-1">Options:</div>
+            <br>
+            {{#options}}
+                <div class="flex flex-row">
+                    <div>${{ calculatedcost }} - {{ name }}</div>
+                </div>
+            {{/options}}
+            <hr class="solid">
+            <div class="flex flex-row">
+                <div class="basis-1/2 font-bold">Subtotal:</div>
+                <div class="basis-1/2">${{ totalcost }} </div>
+            </div>
+        </div>
+    </div>
+        <div class="flex flex-row">
+            <div class="text-red-600">
+                <p>RECEIVED BY: {{ received_by }}</p>
+            </div>
         </div>
     {{/orders}}
-    </div>
+
+
 </div>
 </body>
 </html>
